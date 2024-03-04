@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMG Test</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        h3::first-letter{
+            font-size: 2em;
+            color: white;
+        }
+        .card{
+            background-color: black;
+            width: 300px;
+            vertical-align: top;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 5px;
+        }
+        h3{
+            color: black;
+            padding: 10px;
+        }
+        .caption::first-letter{
+            color: gold;
+        }
+        .card:hover h4{
+            color: gold;
+        }
+        .card h4,p{
+            margin: 10px;
+        }
+        .card:hover p{
+            color: gold;
+        }
+        .caption{
+            text-align: center;
+            color: white;
+            padding: 1px;
+        }
+        .card img{
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+        .card:hover{
+            box-shadow: 2px 5px 3px grey;
+        }
+
+    </style>
+</head>
+<body>
+        <h3>Random image cards</h3>
+        <div class="card">
+            <img src="https://picsum.photos/seed/14/100">
+            <div class="caption">
+                <h4>Random Picture</h4>
+                <p>This is a picture</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/seed/15/200">
+            <div class="caption">
+                <h4>Random picture</h4>
+                <p>This is a picture</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/seed/201/200">
+            <div class="caption">
+                <h4>Random Picture</h4>
+                <p>This is a picture</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/seed/200/200">
+            <div class="caption">
+                <h4>Random picture</h4>
+                <p>This is a picture</p>
+            </div>
+        </div>
+   
+    
+</body>
+</html>
