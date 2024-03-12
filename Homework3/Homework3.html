@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            background-color: rgba(226, 222, 222, 0.528);
+            height: 100vh;
+        }
+        .maincontainer{
+            display: flex;
+            flex-flow: wrap;
+            height: 80vh;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .title{
+            display: flex;
+            flex-flow: column wrap;
+            vertical-align: center;
+        }
+        @media(max-width: 840px){
+            .title{
+                text-align: center;
+            }
+        }
+        .logo{
+            color: rgb(4, 113, 255);
+            font-size: 3em;
+        }
+        .caption{
+            display: block;
+            width: 460px;
+            font-size: 1.5em;
+        }
+        .logincontainer{
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+        .loginmain{
+            background-color: white;
+            padding: 15px;
+            flex-flow: column;
+            align-items: center;
+            box-shadow: 1px 1px 5px lightgrey;
+            border-radius: 5px;
+                }
+        input{
+            flex-grow: 0;
+            flex-shrink: 0;
+            font-size: 1.25em;
+            padding: 10px;
+            width: 350px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+        }
+        input:hover{
+            border: 1px solid rgb(4, 113, 255);
+        }
+        ::placeholder{
+            color: lightgray;
+            font-weight: 200;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        .loginbutton{
+            width: 345px;
+            margin: 0 1%;
+            padding: 15px;
+            font-size: 1.25em;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(4, 113, 255);
+            border-radius: 5px;
+            border: none;
+        }
+        .belowlogin{
+            display: flex;
+            flex-flow: column;
+            text-align: center;
+            margin-top: 20px;
+            align-items: center;
+        }
+        .forgot{
+            padding: 20px;
+            border: none;
+            border-bottom: 1px solid lightgrey;
+            background-color: white;
+            color: rgb(4, 113, 255);
+            font-size: 1em;
+            width: 345px;
+        }
+        .newaccount{
+            margin-top: 20px;
+            padding: 15px;
+            font-size: 1em;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(1, 181, 1);
+            border: none;
+            border-radius: 5px;
+            width: 345px;
+            display: flex;
+            justify-content: center;
+        }
+        @media(max-width: 840px){
+            .captionbelowlogin{
+                margin-bottom: 40px;
+            }
+        }
+        .captionbelowlogin{
+            font-size: 1em;
+            font-weight: 300;
+            margin-top: 30px;
+            text-align: center;
+            border: none;
+            background-color: rgb(1, 181, 1, 0);
+        }
+        .footer{
+            background-color: white;
+            padding: 10px 40px;
+
+        }
+        .language{
+            display: flex;
+            flex-flow: wrap;
+            list-style: none;
+            flex-basis: 100%;
+            border-bottom: 1px solid lightgray;
+        }
+        a {
+            padding: 10px;
+            flex-shrink: 0;
+            color: lightgray;
+            font-size: 0.75em;
+            text-decoration: none;
+        }
+        .plus{
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-inline: 10px;
+            font-weight: bold;
+        }
+        .footermenu{
+            display: flex;
+            flex-flow: wrap;
+            list-style: none;
+        }
+        .copyright{
+            padding: 10px;
+            color: lightgray;
+            font-size: 0.75em;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="title">
+            <h1 class="logo">facebook</h1>
+            <p class="caption">Facebook helps you connect and share with people in your life</p>
+        </div>
+        <div class="logincontainer">
+            <div class="loginmain">
+                <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                    <input type="text" id="email" name="email" placeholder="Email address or phone number"><br>
+                    <input type="password" id="password" name="password" placeholder="Password"><br>
+                    <button class="loginbutton">Login</button>
+                </form>
+                <div class="belowlogin">
+                    <button class="forgot">Forgotten password?</button>
+                    <button class="newaccount">Create new account</button>
+                </div>
+            </div>
+        <button class="captionbelowlogin"><b>Create Page</b> for a celebrity, brand or business.</button>
+        </div>
+    </div>
+    <div class="footer">
+            <div class="language">
+                <a href="#">English (UK)</a href="#">
+                <a href="#">ภาษาไทย</a href="#">
+                <a href="#">日本語</a href="#">
+                <a href="#">中文(简体)</a href="#">
+                <a href="#">Tiếng Việt</a href="#">
+                <a href="#">Français (France)</a href="#">
+                <a href="#">Deutsch</a href="#">
+                <a href="#">Русский</a href="#">
+                <a href="#">Español</a href="#">
+                <a href="#">Português (Brasil)</a href="#">
+                <a href="#">Italiano</a href="#">
+                <a href="#"><button class="plus">+</button></a href="#">
+            </div>
+            <div class="footermenucontainer">
+                <div class="footermenu">
+                    <a href="#">menu1</a href="#">
+                    <a href="#">menu2</a href="#">
+                    <a href="#">menu3</a href="#">
+                    <a href="#">menu4</a href="#">
+                    <a href="#">menu5</a href="#">
+                    <a href="#">menu6</a href="#">
+                    <a href="#">menu7</a href="#">
+                    <a href="#">menu8</a href="#">
+                    <a href="#">menu9</a href="#">
+                    <a href="#">menu10</a href="#">
+                    <a href="#">menu11</a href="#">
+                    <a href="#">menu12</a href="#">
+                    <a href="#">menu13</a href="#">
+                    <a href="#">menu14</a href="#">
+                    <a href="#">menu15</a href="#">
+                    <a href="#">menu16</a href="#">
+                    <a href="#">menu17</a href="#">
+                    <a href="#">menu18</a href="#">
+                    <a href="#">menu19</a href="#">
+                    <a href="#">menu20</a href="#">
+                    <a href="#">menu21</a href="#">
+                    <a href="#">menu22</a href="#">
+                    <a href="#">menu23</a href="#">
+                    <a href="#">menu24</a href="#">
+                    <a href="#">menu25</a href="#">
+                    <a href="#">menu26</a href="#">
+                    <a href="#">menu27</a href="#">
+                    <a href="#">menu28</a href="#">
+                    <a href="#">menu29</a href="#">
+                    <a href="#">menu30</a href="#">
+                </div>
+            </div>
+            <div class="copyright">Meta © 2024</div>
+    </div>
+</body>
+</html>
